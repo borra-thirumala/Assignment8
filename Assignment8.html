@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .signal {
+        height: 20vh;
+        width: 2vw;
+        padding: 2%;
+        background-color: black;
+        margin-left: 48%;
+        margin-top: 8%;
+        border-radius: 50px;
+        border: solid 5px black;
+      }
+      .red {
+        height: 6vh;
+        width: 4vw;
+        background-color: red;
+        border-radius: 50%;
+        margin-left: -16px;
+        margin-top: 2px;
+      }
+      .yellow {
+        height: 6vh;
+        width: 4vw;
+        background-color: yellow;
+        border-radius: 50%;
+        margin-left: -16px;
+        margin-top: 8px;
+      }
+      .green {
+        height: 6vh;
+        width: 4vw;
+        background-color: darkgreen;
+        border-radius: 50%;
+        margin-left: -16px;
+        margin-top: 8px;
+      }
+      .pole {
+        height: 30vh;
+        width: 3vw;
+        background-color: black;
+
+        margin-left: -7px;
+        margin-top: 10px;
+      }
+      .circle {
+        height: 2vh;
+        width: 5vw;
+        background-color: black;
+        border-radius: 100px;
+        margin-left: -20px;
+        margin-right: 4px;
+        padding-bottom: 5px;
+      }
+
+      .Nationalflag {
+        width: 20vw;
+        height: 20vh;
+        margin-left: 40%;
+        margin-top: 2%;
+        box-shadow: 0px 0px 90px 1px #989;
+        background-color: transparent;
+        position: relative;
+      }
+
+      h3 {
+        margin-top: 30%;
+      }
+      .stick {
+        height: 45vh;
+        width: 0.5vw;
+        background: black;
+        margin-left: 40%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      .Orange {
+        height: 6vh;
+        padding: 2%;
+
+        background-color: #ff9933;
+      }
+
+      .White {
+        height: 6vh;
+        padding: 2%;
+
+        background-color: white;
+      }
+
+      .Green {
+        height: 6vh;
+        padding: 2%;
+
+        background-color: green;
+      }
+
+      .wheel {
+        height: 6vh;
+        width: 3vw;
+        border: 1px solid darkblue;
+        border-radius: 45px;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .wheel .line {
+        height: 100%;
+        width: 1px;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        background: darkblue;
+      }
+
+      .line:nth-child(1) {
+        transform: rotate(15deg);
+      }
+
+      .line:nth-child(2) {
+        transform: rotate(30deg);
+      }
+
+      .line:nth-child(3) {
+        transform: rotate(45deg);
+      }
+
+      .line:nth-child(4) {
+        transform: rotate(60deg);
+      }
+
+      .line:nth-child(5) {
+        transform: rotate(75deg);
+      }
+
+      .line:nth-child(6) {
+        transform: rotate(90deg);
+      }
+
+      .line:nth-child(7) {
+        transform: rotate(105deg);
+      }
+
+      .line:nth-child(8) {
+        transform: rotate(120deg);
+      }
+
+      .line:nth-child(9) {
+        transform: rotate(135deg);
+      }
+
+      .line:nth-child(10) {
+        transform: rotate(150deg);
+      }
+
+      .line:nth-child(11) {
+        transform: rotate(165deg);
+      }
+
+      .line:nth-child(12) {
+        transform: rotate(180deg);
+      }
+
+      h1 {
+        margin-top: 10%;
+      }
+      .a1 {
+        border: 2px solid black;
+
+        border-radius: 50%;
+        margin-top: 50px;
+        margin-left: 100px;
+        position: absolute;
+      }
+      .a2 {
+        height: 75vh;
+        width: 51vw;
+        margin-left: 70px;
+        background-color: red;
+        position: absolute;
+      }
+      .a3 {
+        height: 62vh;
+        width: 45vw;
+        margin-left: 50px;
+        background-color: pink;
+        position: absolute;
+      }
+      .a4 {
+        height: 51vh;
+        width: 39vw;
+        margin-left: 50px;
+        background-color: rgb(192, 237, 255);
+        position: absolute;
+      }
+      .a5 {
+        height: 39vh;
+        width: 32vw;
+        margin-left: 50px;
+        background-color: blueviolet;
+        position: absolute;
+      }
+
+      .a6 {
+        height: 25vh;
+        width: 25vw;
+        margin-left: 50px;
+        background-color: rgb(121, 194, 19);
+        position: absolute;
+      }
+      .a7 {
+        height: 90vh;
+        width: 60vw;
+        background-color: rgb(10, 82, 171);
+        position: absolute;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 align="center">Traffic Lights System</h2>
+
+    <div class="signal">
+      <div class="red"></div>
+
+      <div class="yellow"></div>
+
+      <div class="green"></div>
+
+      <div class="pole"></div>
+
+      <div class="circle"></div>
+    </div>
+
+    <h3 align="center"><i>Indian National Flag</i></h3>
+    <div class="Nationalflag">
+      <div class="Orange"></div>
+      <div class="White">
+        <div class="wheel">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+      <div class="Green"></div>
+    </div>
+
+    <div class="stick"></div>
+
+    <h1 align="center">Archery board</h1>
+    <div class="a1 a7">
+      <div class="a1 a2">
+        <div class="a1 a3">
+          <div class="a1 a4">
+            <div class="a1 a5">
+              <div class="a1 a6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
